@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 110" role="img" aria-label="ArtisticVenture360">
+  <!-- Version B, Bold two-tone: short A in emerald, V rising into a gold growth arrow -->
+  <g transform="translate(0 6) scale(0.9)">
+    <path d="M 12 84 L 30 46 L 50 88" fill="none" stroke="#0b5d4b" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M 50 88 C 60 62 80 30 108 16" fill="none" stroke="#d4a72c" stroke-width="11" stroke-linecap="round"/>
+    <path d="M 94.2 12.6 L 110 15 L 102.4 29.1" fill="none" stroke="#d4a72c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="124" y="62" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-weight="800" font-size="30" letter-spacing="-0.6"><tspan fill="#0b5d4b">ArtisticVenture</tspan><tspan fill="#d4a72c">360</tspan></text>
+  <text x="125" y="86" font-family="Inter, 'Segoe UI', Arial, sans-serif" font-weight="500" font-size="11.5" letter-spacing="3" fill="#0b5d4b" opacity=".75">ALWAYS ON THE RISE</text>
+</svg>
