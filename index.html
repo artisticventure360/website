@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ArtisticVenture360 · eBay Store Management · Always on the rise</title>
-<meta name="description" content="ArtisticVenture360 manages eBay stores in the US, UK, Germany and Australia. Free for the first 90 days.">
+<title>ArtisticVenture360 · eBay Seller Onboarding · Always on the rise</title>
+<meta name="description" content="ArtisticVenture360 helps businesses become successful eBay sellers in the US, UK, Germany and Australia, with onboarding guidance, training and best practices.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap">
@@ -213,10 +213,10 @@ section.block > .wrap { padding-block: clamp(60px, 8vw, 100px); }
 @media (max-width: 520px) { .why { grid-template-columns: 1fr; } }
 
 /* Blog */
-.posts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.posts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .post { background: var(--surface); border: 1px solid var(--rule); border-radius: 14px; overflow: hidden; display: flex; flex-direction: column; min-width: 0; }
 .post .cover { aspect-ratio: 16 / 8; max-width: 100%; display: grid; place-items: center; background: var(--tint); border-bottom: 1px solid var(--rule); }
-.post .cover span { font: 800 clamp(1.6rem, 3vw, 2.2rem)/1 var(--display); color: var(--brand); letter-spacing: -0.03em; }
+.post .cover span { font: 800 clamp(1.5rem, 2.4vw, 2rem)/1 var(--display); color: var(--brand); letter-spacing: -0.03em; }
 .post .cover span em { font-style: normal; color: var(--gold); }
 .post .body { padding: 22px; display: grid; gap: 10px; flex: 1; align-content: start; }
 .post .meta { font-size: 0.8rem; color: var(--soft); }
@@ -224,7 +224,7 @@ section.block > .wrap { padding-block: clamp(60px, 8vw, 100px); }
 .post p { color: var(--soft); font-size: 0.93rem; }
 .post button { justify-self: start; margin-top: 6px; background: none; border: 0; padding: 0; cursor: pointer; font: 600 0.92rem/1 var(--body); color: var(--brand); }
 .post button:hover { text-decoration: underline; }
-@media (max-width: 960px) { .posts { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 1060px) { .posts { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .posts { grid-template-columns: 1fr; } }
 
 dialog.article { width: min(720px, calc(100vw - 32px)); max-height: calc(100vh - 48px); border: 1px solid var(--rule); border-radius: 16px; padding: 0; background: var(--surface); color: var(--ink); }
@@ -261,14 +261,13 @@ dialog.article::backdrop { background: rgba(4, 19, 14, .55); }
 .ch a.val { text-decoration: none; }
 .copy-btn { font: 500 0.8rem/1 var(--body); background: transparent; color: var(--ink); border: 1px solid var(--rule); border-radius: 8px; padding: 9px 11px; cursor: pointer; }
 .note { color: var(--soft); font-size: 0.88rem; }
-form.lead { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; padding: clamp(20px, 3vw, 30px); display: grid; gap: 14px; }
-form.lead h3 { font-size: 1.2rem; }
-.r2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-@media (max-width: 560px) { .r2 { grid-template-columns: 1fr; } }
-label.f { display: grid; gap: 6px; font-size: 0.85rem; font-weight: 600; }
-input, select, textarea { font: inherit; font-size: 0.97rem; color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 9px; padding: 11px 12px; width: 100%; }
-textarea { min-height: 96px; resize: vertical; }
-.err { color: #c43d2f; font-size: 0.88rem; font-weight: 600; }
+.lead { background: var(--surface); border: 1px solid var(--rule); border-radius: 16px; padding: clamp(20px, 3vw, 30px); display: grid; gap: 16px; align-content: start; }
+.lead h3 { font-size: 1.2rem; }
+.lead p { color: var(--soft); }
+.qs { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; counter-reset: q; }
+.qs li { counter-increment: q; display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; font-weight: 500; }
+.qs li::before { content: counter(q); width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--tint); color: var(--brand); font: 700 0.85rem/1 var(--display); }
+.lead .ctas { display: flex; flex-wrap: wrap; gap: 10px; }
 @media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } }
 
 footer { border-top: 1px solid var(--rule); background: var(--surface); }
@@ -295,10 +294,11 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://artisticventure360.com/">
 <meta property="og:title" content="ArtisticVenture360 · Always on the rise">
-<meta property="og:description" content="We set up, manage and grow eBay stores in the US, UK, Germany and Australia. Free for the first 90 days.">
+<meta property="og:description" content="ArtisticVenture360 helps businesses become successful eBay sellers in the US, UK, Germany and Australia, with onboarding guidance, training and best practices.">
 <meta property="og:image" content="https://artisticventure360.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image"></head>
 <body>
+
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
     <symbol id="logo" viewBox="4 6 114 88">
@@ -315,6 +315,9 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <symbol id="i-box" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M3 7.5 12 3l9 4.5v9L12 21l-9-4.5zM3 7.5l9 4.5 9-4.5M12 12v9"/></symbol>
     <symbol id="i-sync" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 8a8 8 0 0 0-14.5-2M4 4v4h4M4 16a8 8 0 0 0 14.5 2M20 20v-4h-4"/></symbol>
     <symbol id="i-grow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M3 17l6-6 4 4 8-8M15 7h6v6"/></symbol>
+    <symbol id="i-learn" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M4 19V5a2 2 0 0 1 2-2h14v14H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h14M8 7h8M8 11h5"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.2a4.3 4.3 0 0 1 7.5 2.6C19.5 15.4 12 20 12 20Z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18ZM3 12h18M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3Z"/></symbol>
   </defs>
 </svg>
 
@@ -339,27 +342,27 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
   <section class="hero">
     <div class="wrap">
       <div class="hero-copy">
-        <span class="offer-pill"><i></i>Free for the first 90 days</span>
+        <span class="offer-pill"><i></i>eBay seller onboarding · US · UK · DE · AU</span>
         <h1>Your eBay store, <em>always on the rise.</em></h1>
-        <p class="rotator" aria-live="off">We take care of <span class="rot" id="rot"><span>account health</span></span></p>
-        <p class="lede">We set up, manage and grow eBay stores, from your first listing to a healthy, high-volume Seller Hub. You focus on products. We handle the rest.</p>
+        <p class="rotator" aria-live="off">We guide you on <span class="rot" id="rot"><span>getting started</span></span></p>
+        <p class="lede">We help businesses become successful eBay sellers. We guide you through registration and train you on the best practices buyers love. You run your store. We stand beside you.</p>
         <div class="ctas">
           <a class="btn wa js-wa" href="#contact" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Chat on WhatsApp</a>
-          <a class="btn ghost" href="#services">See our services</a>
+          <a class="btn ghost" href="#services">How we help</a>
         </div>
         <div class="markets" aria-label="Marketplaces">
           <span><b>US</b>ebay.com</span><span><b>UK</b>ebay.co.uk</span><span><b>DE</b>ebay.de</span><span><b>AU</b>ebay.com.au</span>
         </div>
       </div>
 
-      <div class="journey" aria-label="What we do for your store">
-        <h3>What we do for your store</h3>
+      <div class="journey" aria-label="Your path to selling on eBay">
+        <h3>Your path to selling on eBay</h3>
         <ol>
-          <li><span class="dot"><svg><use href="#i-store"/></svg></span><div><b>Launch</b><p>We set up your store and list your products.</p></div></li>
-          <li><span class="dot"><svg><use href="#i-shield"/></svg></span><div><b>Protect</b><p>We keep your account safe and fix any problems.</p></div></li>
-          <li><span class="dot up"><svg><use href="#i-grow"/></svg></span><div><b>Grow</b><p>We help you sell more, month after month.</p></div></li>
+          <li><span class="dot"><svg><use href="#i-case"/></svg></span><div><b>Get ready</b><p>Tell us what you sell and where you sell it today.</p></div></li>
+          <li><span class="dot"><svg><use href="#i-store"/></svg></span><div><b>Register</b><p>We guide you step by step to become an eBay seller.</p></div></li>
+          <li><span class="dot up"><svg><use href="#i-grow"/></svg></span><div><b>Sell with confidence</b><p>Training and best practices as you grow.</p></div></li>
         </ol>
-        <div class="journey-foot"><span>First 90 days</span><b>Free</b></div>
+        <div class="journey-foot"><span>You run your store.</span><b>We guide.</b></div>
       </div>
     </div>
   </section>
@@ -368,14 +371,14 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="ticker-track" id="ticker" aria-hidden="true"></div>
   </div>
 
-  <section class="offer" aria-label="90-day free offer">
+  <section class="offer" aria-label="Sell globally">
     <div class="wrap">
-      <div class="big">90 days<small>Free for eBay sellers</small></div>
+      <div class="big">Go global<small>Sell worldwide on eBay</small></div>
       <div class="copy">
-        <h2>Full store management at no cost for your first 90 days</h2>
-        <ul><li>No setup fee</li><li>Your store stays in your name</li><li>Continue only if you're happy</li></ul>
+        <h2>Selling locally, on Shopify or on other marketplaces? Take your products to the world.</h2>
+        <ul><li>Sellers in our focus categories are welcome</li><li>Step-by-step guidance</li><li>Your business, your control</li></ul>
       </div>
-      <a class="btn wa js-wa" href="#contact" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Claim free 90 days</a>
+      <a class="btn wa js-wa" href="#contact" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Talk to us</a>
     </div>
   </section>
 
@@ -383,27 +386,33 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Services</span>
-        <h2>Everything your eBay store needs</h2>
-        <p>Pick one service or hand us the whole store. We work inside your account with your permission, and you keep full ownership.</p>
+        <h2>How we help you sell on eBay</h2>
+        <p>We are consultants. You own and operate your eBay store. We give you the guidance and training to run it well.</p>
       </div>
       <div class="services">
         <article class="svc">
-          <span class="ico"><svg><use href="#i-store"/></svg></span>
-          <h3>Store setup &amp; management</h3>
-          <p>From a brand-new account to a fully running Seller Hub, managed every day.</p>
-          <div class="chips"><span>Start-up stores</span><span>Seller Hub</span><span>Listings</span><span>Store sales</span></div>
-        </article>
-        <article class="svc">
-          <span class="ico"><svg><use href="#i-shield"/></svg></span>
-          <h3>Account health &amp; risk</h3>
-          <p>Keep your metrics green and your account safe from restrictions.</p>
-          <div class="chips"><span>Health monitoring</span><span>Risk management</span><span>BBE</span><span>SNAD control</span><span>Feedback</span></div>
-        </article>
-        <article class="svc">
           <span class="ico"><svg><use href="#i-case"/></svg></span>
-          <h3>Cases &amp; restrictions</h3>
-          <p>When something goes wrong, we fix it and help you get selling again.</p>
-          <div class="chips"><span>Account restrictions</span><span>Case resolution</span><span>Seller defect removal</span><span>Verification documents</span></div>
+          <h3>Seller readiness</h3>
+          <p>Tell us about your business and products. We tell you whether eBay is a good fit and how to prepare.</p>
+          <div class="chips"><span>Product fit</span><span>Marketplace choice</span><span>Getting ready</span></div>
+        </article>
+        <article class="svc">
+          <span class="ico"><svg><use href="#i-store"/></svg></span>
+          <h3>Registration guidance</h3>
+          <p>We walk you through registering as an eBay seller and setting up your Seller Hub, one step at a time.</p>
+          <div class="chips"><span>Registration</span><span>Seller Hub</span><span>Store setup</span></div>
+        </article>
+        <article class="svc">
+          <span class="ico"><svg><use href="#i-learn"/></svg></span>
+          <h3>Training &amp; best practices</h3>
+          <p>Learn what successful sellers do: strong listings, clear photos and a store that looks professional.</p>
+          <div class="chips"><span>Listings</span><span>Photos</span><span>Descriptions</span><span>Store design</span><span>Social media</span></div>
+        </article>
+        <article class="svc">
+          <span class="ico"><svg><use href="#i-heart"/></svg></span>
+          <h3>Customer experience</h3>
+          <p>We guide you proactively so your buyers get a great experience, every order.</p>
+          <div class="chips"><span>Free shipping</span><span>Easy returns</span><span>Buyer messages</span><span>Feedback</span></div>
         </article>
         <article class="svc">
           <span class="ico"><svg><use href="#i-box"/></svg></span>
@@ -417,12 +426,6 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
           <p>Connect your Shopify store and eBay so products, stock and orders stay in sync.</p>
           <div class="chips"><span>Product sync</span><span>Inventory sync</span><span>Order sync</span><span>Store setup</span></div>
         </article>
-        <article class="svc">
-          <span class="ico"><svg><use href="#i-grow"/></svg></span>
-          <h3>Growth &amp; scaling</h3>
-          <p>Raise your limits, grow GMV and bring in traffic from outside eBay.</p>
-          <div class="chips"><span>Selling limits</span><span>High GMV</span><span>Profit increase</span><span>E-commerce SEO</span><span>YouTube channels</span><span>YouTube automation</span></div>
-        </article>
       </div>
     </div>
   </section>
@@ -431,13 +434,13 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">How it works</span>
-        <h2>Four steps to a managed store</h2>
+        <h2>Four steps to becoming an eBay seller</h2>
       </div>
       <div class="steps">
-        <div class="step"><span class="n">1</span><h3>Message us</h3><p>Send your store link on WhatsApp or email. New sellers can start from zero.</p></div>
-        <div class="step"><span class="n">2</span><h3>Free store review</h3><p>We check your account health, limits, listings and open cases, and send you a plan.</p></div>
-        <div class="step"><span class="n">3</span><h3>Secure access</h3><p>You add us as a user with limited permissions. We never ask for your password.</p></div>
-        <div class="step"><span class="n">4</span><h3>We run and report</h3><p>We manage the store daily and send a short weekly report on sales and health.</p></div>
+        <div class="step"><span class="n">1</span><h3>Message us</h3><p>Reach us on WhatsApp or email and tell us about your business.</p></div>
+        <div class="step"><span class="n">2</span><h3>Tell us what you sell</h3><p>Share what you sell, where you sell it today and which eBay market interests you.</p></div>
+        <div class="step"><span class="n">3</span><h3>Get registered</h3><p>When you're ready, we guide you through registering as an eBay seller.</p></div>
+        <div class="step"><span class="n">4</span><h3>Learn and grow</h3><p>You run your store. We share best practices and guidance as you grow.</p></div>
       </div>
     </div>
   </section>
@@ -446,12 +449,12 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Why ArtisticVenture360</span>
-        <h2>Safe methods, clear reporting</h2>
+        <h2>Guidance you can trust</h2>
       </div>
       <div class="why">
-        <div><b>Your store stays yours</b><p>Account, listings, customers and payouts stay in your name.</p></div>
-        <div><b>No password sharing</b><p>We work through eBay's own user permissions.</p></div>
-        <div><b>Policy-safe only</b><p>No fake reviews, no bought accounts, no shortcuts that risk your store.</p></div>
+        <div><b>Your store stays yours</b><p>You own and operate your eBay account. We never ask for your password.</p></div>
+        <div><b>Proactive guidance</b><p>We guide you before problems happen, so buyers get a better experience.</p></div>
+        <div><b>Policy-safe only</b><p>We follow eBay's rules. No shortcuts that put your business at risk.</p></div>
         <div><b>Across time zones</b><p>Our team covers US, UK, EU and Australian hours.</p></div>
       </div>
     </div>
@@ -461,8 +464,8 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Blog</span>
-        <h2>Guides for eBay sellers</h2>
-        <p>Practical advice from the work we do on seller accounts every day.</p>
+        <h2>Best practices for successful sellers</h2>
+        <p>Simple habits that help buyers choose you, trust you and come back.</p>
       </div>
       <div class="posts" id="posts"></div>
     </div>
@@ -475,12 +478,13 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
         <h2>Common questions</h2>
       </div>
       <div class="faq">
-        <details><summary>Is it really free for 90 days?</summary><p>Yes. Every eBay seller who joins gets our service free for the first 90 days. After that, you decide whether to continue on a monthly plan we agree together.</p></details>
-        <details><summary>Which eBay marketplaces do you work on?</summary><p>eBay US, UK, Germany and Australia, for new stores and established sellers.</p></details>
-        <details><summary>Can you help if my account is restricted?</summary><p>Yes. We review the restriction notice, prepare the right documents and appeal, and fix the cause so it doesn't happen again. The final decision is eBay's, so we tell you honestly how strong your case looks.</p></details>
-        <details><summary>What is SNAD?</summary><p>SNAD means "significantly not as described". It's a return or case reason that counts against your account. We reduce it by fixing listings, photos and packaging.</p></details>
-        <details><summary>Do you need my password?</summary><p>No. You add us as a user in your eBay account with only the permissions we need, and you can remove us at any time.</p></details>
-        <details><summary>Are you part of eBay?</summary><p>No. ArtisticVenture360 is an independent company that provides services to eBay sellers.</p></details>
+        <details><summary>Who can become an eBay seller with your help?</summary><p>Businesses that already sell, locally, online or on other marketplaces, and want to sell globally. If you have inventory in our focus categories, you are most welcome.</p></details>
+        <details><summary>What do I need to tell you to get started?</summary><p>Whether you sell locally (and your store or business name), whether you sell on international websites, and which other sites you sell on. This helps us understand if you're ready to sell on eBay.</p></details>
+        <details><summary>Which eBay marketplaces do you guide on?</summary><p>eBay US, UK, Germany and Australia.</p></details>
+        <details><summary>Do you run my store for me?</summary><p>No. You own and operate your store. We give you training and guidance on best practices so you can run it successfully.</p></details>
+        <details><summary>Do you need my password or account access?</summary><p>No. We never ask for your password or access to your account.</p></details>
+        <details><summary>I already have a Shopify store. Can I sell on eBay too?</summary><p>Yes. Shopify connects to eBay easily, so your products, stock and orders can stay in sync. We guide you through it.</p></details>
+        <details><summary>Are you part of eBay?</summary><p>No. ArtisticVenture360 is an independent consultancy that helps businesses become eBay sellers.</p></details>
       </div>
     </div>
   </section>
@@ -489,7 +493,7 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     <div class="wrap">
       <div class="head">
         <span class="eyebrow">Contact</span>
-        <h2>Start your free 90 days</h2>
+        <h2>Ready to sell on eBay?</h2>
         <p>WhatsApp is the fastest way to reach us. You can also email or call.</p>
       </div>
       <div class="contact-grid">
@@ -499,21 +503,21 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
           <div class="ch"><span class="ico"><svg><use href="#i-phone"/></svg></span><div><small>Phone</small><span class="val js-phone"></span></div><button class="copy-btn" type="button" data-copy="phone">Copy</button></div>
           <p class="note">We usually reply within a few hours. Pakistan Standard Time (UTC+5).</p>
         </div>
-        <form class="lead" id="lead" novalidate>
-          <h3>Request your free store review</h3>
-          <div class="r2">
-            <label class="f" for="fName">Your name<input id="fName" autocomplete="name" placeholder="Ali Khan"></label>
-            <label class="f" for="fStore">eBay store link (optional)<input id="fStore" placeholder="ebay.com/str/yourstore"></label>
+        <div class="lead">
+          <h3>Tell us about your business</h3>
+          <p>Send us answers to these questions. We'll let you know if you're ready to sell on eBay and how to start.</p>
+          <ol class="qs">
+            <li>Do you sell locally? If yes, what is your store or business name?</li>
+            <li>Do you sell on international websites?</li>
+            <li>Which other sites do you sell on? (Shopify, Amazon, Etsy, Daraz…)</li>
+            <li>What products do you sell?</li>
+            <li>Which eBay market interests you: US, UK, Germany or Australia?</li>
+          </ol>
+          <div class="ctas">
+            <a class="btn wa" id="waQs" href="#contact" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-wa"/></svg>Answer on WhatsApp</a>
+            <a class="btn ghost" id="mailQs" href="#contact"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email us</a>
           </div>
-          <div class="r2">
-            <label class="f" for="fMarket">Marketplace<select id="fMarket"><option>eBay US</option><option>eBay UK</option><option>eBay Germany</option><option>eBay Australia</option><option>More than one</option><option>Not started yet</option></select></label>
-            <label class="f" for="fNeed">What do you need?<select id="fNeed"><option>Full store management</option><option>New store setup</option><option>Account restriction</option><option>Defects, cases or SNAD</option><option>Selling limit increase</option><option>Order fulfilment / 3PL</option><option>Shopify integration</option><option>SEO or YouTube</option></select></label>
-          </div>
-          <label class="f" for="fMsg">Message<textarea id="fMsg" placeholder="Tell us about your store and what you'd like to fix or grow."></textarea></label>
-          <p class="err" id="fErr" hidden></p>
-          <button class="btn wa" type="submit"><svg aria-hidden="true"><use href="#i-wa"/></svg>Send on WhatsApp</button>
-          <p class="note">This opens WhatsApp with your details filled in. Nothing is sent until you press send there.</p>
-        </form>
+        </div>
       </div>
     </div>
   </section>
@@ -528,7 +532,7 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
       </div>
       <nav aria-label="Footer"><a href="#services">Services</a><a href="#how">How it works</a><a href="#blog">Blog</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></nav>
     </div>
-    <p class="disc">© 2026 ArtisticVenture360. An independent service provider for eBay sellers. Not owned by, affiliated with or endorsed by eBay Inc. eBay and Shopify are trademarks of their respective owners.</p>
+    <p class="disc">© 2026 ArtisticVenture360. An independent consultancy that helps businesses become eBay sellers. Not owned by, affiliated with or endorsed by eBay Inc. eBay and Shopify are trademarks of their respective owners.</p>
   </div>
 </footer>
 
@@ -542,7 +546,7 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
 (() => {
   const CONTACT = { phoneDisplay: "+92 309 9999996", phoneIntl: "923099999996", email: "info@artisticventure360.com" };
   const waLink = t => `https://wa.me/${CONTACT.phoneIntl}${t ? "?text=" + encodeURIComponent(t) : ""}`;
-  document.querySelectorAll(".js-wa").forEach(a => a.href = waLink("Hi ArtisticVenture360, I'd like to start my free 90 days."));
+  document.querySelectorAll(".js-wa").forEach(a => a.href = waLink("Hi ArtisticVenture360, I'd like to know more about selling on eBay."));
   document.querySelectorAll(".js-phone").forEach(el => el.textContent = CONTACT.phoneDisplay);
   document.querySelectorAll(".js-email").forEach(el => el.textContent = CONTACT.email);
   document.querySelectorAll("[data-copy]").forEach(b => b.addEventListener("click", () => {
@@ -552,13 +556,18 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
     try { navigator.clipboard.writeText(val).then(() => { b.textContent = "Copied"; reset(); }, fallback); } catch (e) { fallback(); }
   }));
 
+  // Questions → WhatsApp / email, pre-filled for the seller to answer
+  const QS = "Hi ArtisticVenture360, I'd like to sell on eBay.\n\n1. Do I sell locally / store name: \n2. Do I sell on international websites: \n3. Other sites I sell on: \n4. Products I sell: \n5. eBay market: ";
+  document.getElementById("waQs").href = waLink(QS);
+  document.getElementById("mailQs").href = `mailto:${CONTACT.email}?subject=${encodeURIComponent("Selling on eBay")}&body=${encodeURIComponent(QS)}`;
+
   // Motion
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
-  const TICK = ["eBay US", "eBay UK", "eBay Germany", "eBay Australia", "Free for 90 days", "Store management", "Account health", "SNAD control", "Selling limits", "Restriction cases", "Order fulfilment & 3PL", "Shopify integration", "Always on the rise"];
-  const tickHtml = TICK.map(t => `<span${/Free|rise/.test(t) ? ' class="hl"' : ""}>${t}</span>`).join("");
+  const TICK = ["eBay US", "eBay UK", "eBay Germany", "eBay Australia", "Seller onboarding", "Registration guidance", "Listing best practices", "Customer experience", "Order fulfilment & 3PL", "Shopify integration", "Always on the rise"];
+  const tickHtml = TICK.map(t => `<span${/rise/.test(t) ? ' class="hl"' : ""}>${t}</span>`).join("");
   document.getElementById("ticker").innerHTML = reduce ? tickHtml : tickHtml + tickHtml;
 
-  const ROT = ["account health", "selling limits", "SNAD & cases", "order fulfilment", "Shopify sync", "store growth"];
+  const ROT = ["getting started", "registration", "great listings", "shipping & returns", "Shopify integration", "customer experience"];
   const rot = document.getElementById("rot");
   let ri = 0;
   if (!reduce) setInterval(() => {
@@ -578,50 +587,97 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
   // Blog
   const POSTS = [
     {
-      id: "snad", cover: ["SN", "AD"], date: "12 Nov 2026", read: "4 min read",
-      title: "What SNAD means, and how to keep it low",
-      excerpt: "\"Significantly not as described\" returns quietly damage seller accounts. Here is where they come from and how to stop them.",
+      id: "shipping", cover: ["Free ", "shipping"], read: "3 min read",
+      title: "Why free shipping matters",
+      excerpt: "Buyers compare the total price. Free shipping makes your listing easier to choose and easier to trust.",
       body: `
-        <p>SNAD stands for "significantly not as described". A buyer picks this reason when the item they received doesn't match the listing. eBay tracks these returns and cases in your service metrics, and a rate well above similar sellers can lead to restrictions or extra fees.</p>
-        <h3>Where SNAD comes from</h3>
-        <ul><li>Photos that hide wear, damage or the true colour</li><li>Missing details: size, compatibility, model number, condition notes</li><li>Wrong item or wrong variation picked when packing</li><li>Items damaged in transit because of weak packaging</li></ul>
-        <h3>How to bring it down</h3>
-        <ol><li>Read your last 30 SNAD returns and group them by cause. Most stores find one or two causes behind most of them.</li><li>Fix the listings first: real photos, exact item specifics, honest condition notes.</li><li>Add a packing check so the right item and variation go out every time.</li><li>Reply to every return within 24 hours and resolve it before it becomes a case.</li></ol>
-        <p>Small listing fixes usually show results within one or two evaluation periods.</p>`
+        <p>When buyers compare listings, they look at the total they will pay. A low price with a high shipping charge often loses to a slightly higher price with free shipping.</p>
+        <h3>Why it works</h3>
+        <ul><li>Buyers see the full cost upfront, with no surprise at checkout</li><li>Many buyers filter search results to show free shipping only</li><li>It makes your offer look simple and confident</li></ul>
+        <h3>How to offer it without losing money</h3>
+        <ol><li>Include the shipping cost in your item price.</li><li>Use light, strong packaging to keep postage low.</li><li>Compare carriers and services for your most common parcel sizes.</li><li>Offer free standard delivery and charge only for faster options.</li></ol>`
     },
     {
-      id: "limits", cover: ["Lim", "its"], date: "5 Nov 2026", read: "4 min read",
-      title: "How to raise your eBay selling limits safely",
-      excerpt: "New accounts start with low limits. Pushing too fast can get the account restricted. This is the safer route.",
+      id: "returns", cover: ["Free ", "returns"], read: "3 min read",
+      title: "Why free returns build buyer confidence",
+      excerpt: "A clear, generous return policy tells buyers you stand behind what you sell.",
       body: `
-        <p>Every eBay account has selling limits: how many items you can list and their total value each month. New sellers start low, and eBay raises limits as you show you can sell and ship reliably.</p>
-        <h3>What eBay looks at</h3>
-        <ul><li>Your sales history and how long the account has been active</li><li>On-time shipping with valid tracking</li><li>Low defects, returns and cases</li><li>Verified identity and business details</li></ul>
-        <h3>A safer path to higher limits</h3>
-        <ol><li>Sell steadily within your current limits instead of hitting the maximum on day one.</li><li>Ship on time and upload tracking for every order.</li><li>Keep defects and cases close to zero.</li><li>Request a higher limit from Seller Hub once you have a clean sales history, with your business and supplier details ready.</li></ol>
-        <p>Growing too fast, listing high-value items early or using copied listings are the most common reasons new accounts get restricted.</p>`
+        <p>Buying online means buying without touching the product. A simple return policy removes that worry and helps a buyer say yes.</p>
+        <h3>What free returns give you</h3>
+        <ul><li>More trust, especially from first-time buyers</li><li>A more professional look next to other sellers</li><li>Happier buyers, even when an item doesn't suit them</li></ul>
+        <h3>Keep returns low</h3>
+        <ol><li>Describe the item honestly and completely.</li><li>Show every angle and any marks in your photos.</li><li>Pack carefully so nothing arrives damaged.</li><li>Reply to return requests quickly and politely.</li></ol>`
     },
     {
-      id: "restricted", cover: ["Re", "stricted"], date: "29 Oct 2026", read: "5 min read",
-      title: "eBay account restricted? Five steps before you appeal",
-      excerpt: "A restriction notice feels urgent, but a rushed appeal often makes it worse. Do these five things first.",
+      id: "description", cover: ["Desc", "ription"], read: "3 min read",
+      title: "Why the best description sells more",
+      excerpt: "A clear description answers questions before buyers ask them, and sets the right expectations.",
       body: `
-        <p>A restriction can limit how much you list, hold your payouts or stop selling completely. Your first appeal matters, so prepare it properly.</p>
-        <ol>
-          <li><strong>Read the notice carefully.</strong> It usually says which policy or metric triggered the restriction and what eBay needs from you.</li>
-          <li><strong>Don't open a new account.</strong> Selling from a second account while one is restricted breaks eBay's rules and can make the restriction permanent.</li>
-          <li><strong>Gather your documents.</strong> ID, proof of address, business registration and supplier invoices, all matching the details on the account.</li>
-          <li><strong>Fix the cause first.</strong> Clean up the listings, defects or shipping problems that led to the restriction, so your appeal can show what has changed.</li>
-          <li><strong>Reply through the official route.</strong> Use the link in the notice or Seller Hub. Keep it short and factual, and attach clear documents.</li>
-        </ol>
-        <p>If you're unsure what triggered the restriction, get your account reviewed before you appeal.</p>`
+        <p>Your description does the job a shop assistant would do in a store. It tells the buyer exactly what they get.</p>
+        <h3>What to include</h3>
+        <ul><li>A clear title with the words buyers search for: brand, model, size, colour</li><li>All item specifics filled in</li><li>Measurements, materials and condition</li><li>What's in the box</li></ul>
+        <h3>Keep it easy to read</h3>
+        <ol><li>Use short paragraphs and bullet points.</li><li>Put the most important facts first.</li><li>Be honest. Accurate descriptions mean fewer questions and fewer returns.</li></ol>`
+    },
+    {
+      id: "photos", cover: ["Pho", "tos"], read: "3 min read",
+      title: "Why you need more pictures",
+      excerpt: "Buyers can't hold your product. Good photos are the next best thing.",
+      body: `
+        <p>Photos are often the first thing a buyer looks at. More good photos mean more confidence and fewer surprises.</p>
+        <h3>Photo checklist</h3>
+        <ul><li>Use your own photos of the real item</li><li>Plain, light background and natural light</li><li>Front, back, sides and close-ups of details and labels</li><li>Show the size, for example next to a hand or a ruler</li><li>Show any marks or wear clearly</li></ul>
+        <p>Use as many photos as the listing allows. Each extra angle answers a buyer's question.</p>`
+    },
+    {
+      id: "store", cover: ["Your ", "store"], read: "3 min read",
+      title: "Why your store should look more professional than others",
+      excerpt: "Buyers choose sellers they trust. A professional store earns that trust at first glance.",
+      body: `
+        <p>Two sellers can offer the same product at the same price. The one that looks more professional usually wins the sale.</p>
+        <h3>What makes a store look professional</h3>
+        <ul><li>A clear logo and banner that match your brand</li><li>Consistent titles and photo style across listings</li><li>Clear shipping and return policies</li><li>A short "about us" that explains who you are</li><li>Fast, polite replies to buyer messages</li></ul>
+        <p>Small details add up. Buyers notice care, and they come back to it.</p>`
+    },
+    {
+      id: "social", cover: ["Soc", "ial"], read: "3 min read",
+      title: "Why social media is important for sellers",
+      excerpt: "Social media builds your brand, so buyers already know and trust you when they find your store.",
+      body: `
+        <p>Social media is where buyers discover brands, see products in use and decide who they trust.</p>
+        <h3>How it helps</h3>
+        <ul><li>Builds a brand people recognise</li><li>Lets you show new products and short videos</li><li>Gives buyers proof that you are a real, active business</li></ul>
+        <h3>Getting started</h3>
+        <ol><li>Pick one or two platforms your buyers use.</li><li>Post regularly, even a few times a week.</li><li>Show your products clearly, in real use.</li><li>Keep your name and logo the same everywhere.</li></ol>`
+    },
+    {
+      id: "shopify", cover: ["Shop", "ify"], read: "3 min read",
+      title: "Already on Shopify? Adding eBay is easy",
+      excerpt: "If you already have a Shopify store, or sell online elsewhere, eBay can be your next sales channel.",
+      body: `
+        <p>If you already sell on Shopify, most of the hard work is done. Your products, photos and descriptions are ready.</p>
+        <h3>Why connect Shopify and eBay</h3>
+        <ul><li>Reuse your existing product information</li><li>Keep stock in sync, so you don't oversell</li><li>Manage orders from one place</li><li>Reach buyers in new countries</li></ul>
+        <p>Already selling on another platform? The same idea applies. Tell us where you sell today and we'll guide you on the best way to bring your products to eBay.</p>`
+    },
+    {
+      id: "global", cover: ["Go ", "global"], read: "3 min read",
+      title: "Thinking of selling globally? Start here",
+      excerpt: "If you sell locally or online and want to reach buyers abroad, eBay can open the door.",
+      body: `
+        <p>eBay gives your products access to buyers in the US, UK, Germany, Australia and beyond.</p>
+        <h3>You could be a good fit if</h3>
+        <ul><li>You already sell, in a local store, online or on other marketplaces</li><li>Your products are in demand outside your country</li><li>You can ship reliably and handle returns</li></ul>
+        <h3>First steps</h3>
+        <ol><li>Choose the market that suits your products.</li><li>Start with your best sellers.</li><li>Plan your shipping and return policy before you list.</li><li>Get guidance on registration and best practices.</li></ol>
+        <p>If you have inventory in our focus categories, you are most welcome to get in touch.</p>`
     }
   ];
   document.getElementById("posts").innerHTML = POSTS.map(p => `
     <article class="post">
       <div class="cover" aria-hidden="true"><span>${p.cover[0]}<em>${p.cover[1]}</em></span></div>
       <div class="body">
-        <span class="meta">${p.date} · ${p.read}</span>
+        <span class="meta">${p.read}</span>
         <h3>${p.title}</h3>
         <p>${p.excerpt}</p>
         <button type="button" data-post="${p.id}">Read article →</button>
@@ -631,26 +687,14 @@ footer .disc { color: var(--soft); font-size: 0.8rem; max-width: 90ch; }
   function openPost(id) {
     const p = POSTS.find(x => x.id === id); if (!p) return;
     artBody.innerHTML = `<div class="top"><div><span class="eyebrow">Blog · ${p.read}</span><h2 id="artTitle" style="margin-top:10px">${p.title}</h2></div><button class="close" type="button" id="artClose">Close</button></div>
-      <span class="note">${p.date}</span>${p.body}
-      <div class="article-cta"><p>Want us to check your store? It's free for 90 days.</p><a class="btn wa" target="_blank" rel="noopener" href="${waLink("Hi ArtisticVenture360, I read your article \"" + p.title + "\" and want my store checked.")}">WhatsApp us</a></div>`;
+      ${p.body}
+      <div class="article-cta"><p>Thinking about selling on eBay? We'll guide you.</p><a class="btn wa" target="_blank" rel="noopener" href="${waLink("Hi ArtisticVenture360, I read \"" + p.title + "\" and I'd like guidance on selling on eBay.")}">WhatsApp us</a></div>`;
     document.getElementById("artClose").addEventListener("click", () => dlg.close());
     if (dlg.showModal) dlg.showModal(); else dlg.setAttribute("open", "");
     artBody.scrollTop = 0;
   }
   document.getElementById("posts").addEventListener("click", e => { const b = e.target.closest("[data-post]"); if (b) openPost(b.dataset.post); });
   dlg.addEventListener("click", e => { if (e.target === dlg) dlg.close(); });
-
-  // Lead form → WhatsApp
-  document.getElementById("lead").addEventListener("submit", e => {
-    e.preventDefault();
-    const v = id => document.getElementById(id).value.trim();
-    const err = document.getElementById("fErr");
-    if (!v("fName")) { err.textContent = "Add your name so we know who we're talking to."; err.hidden = false; document.getElementById("fName").focus(); return; }
-    err.hidden = true;
-    const text = ["Hi ArtisticVenture360, I'd like to start my free 90 days.", "Name: " + v("fName"), v("fStore") ? "Store: " + v("fStore") : "", "Marketplace: " + v("fMarket"), "Need: " + v("fNeed"), v("fMsg") ? "Message: " + v("fMsg") : ""].filter(Boolean).join("\n");
-    const a = document.createElement("a"); a.href = waLink(text); a.target = "_blank"; a.rel = "noopener";
-    document.body.appendChild(a); a.click(); a.remove();
-  });
 })();
 </script>
 
